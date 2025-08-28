@@ -27,3 +27,36 @@ document.getElementById("brac-call").addEventListener("click",function(){
 document.getElementById("bd-railway-call").addEventListener("click",function(){
     alert("Bangladesh railway helpline, 163")
 })
+
+// love react counter
+
+// function getElement(id){
+//     const element = document.getElementById(id);
+//     return element;
+// }
+
+// const heartBtns = document.getElementsByClassName("heart-btn");
+
+// for (let heartButton of heartBtns){
+//     heartButton.addEventListener("click",function(){
+//         const heartReserved = document.getElementById("heart-count").innerText;
+
+
+//         const currentCount = Number(heartBtns) + Number(heartReserved);
+//         return currentCount;
+//         // getElement("heart-count").innerText = heartReserved;
+//     }); 
+// }
+
+let heartBtn = document.getElementsByClassName("heart-btn");
+
+let countSpan = document.getElementById("heart-count").innerText;
+
+// heartBtn.addEventListener("click", function(){
+//     let count = parseInt(countSpan);
+//     count = count + 1;
+//     countSpan= count;
+// })
+document.getElementsByClassName("heart-btn").addEventListener("click", function(){
+    console.log("btn clicked")
+})
