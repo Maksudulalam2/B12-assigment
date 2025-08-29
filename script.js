@@ -30,33 +30,28 @@ document.getElementById("bd-railway-call").addEventListener("click",function(){
 
 // love react counter
 
-// function getElement(id){
-//     const element = document.getElementById(id);
-//     return element;
-// }
 
-// const heartBtns = document.getElementsByClassName("heart-btn");
+    // const heartBtns = document.getElementsByClassName('heart-btn');
+    // const heartCounts = document.getElementById('heart-count');
 
-// for (let heartButton of heartBtns){
-//     heartButton.addEventListener("click",function(){
-//         const heartReserved = document.getElementById("heart-count").innerText;
+    // for (let i = 0; i < heartBtns; i++) {
+    //     heartBtns[i].addEventListener('click', function() {
+    //         let currentCount = parseInt(heartCounts[i].innerText);
+    //         currentCount = currentCount + 1;
+    //         heartCounts[i].innerText = currentCount;
+    //     });
+    // }
 
 
-//         const currentCount = Number(heartBtns) + Number(heartReserved);
-//         return currentCount;
-//         // getElement("heart-count").innerText = heartReserved;
-//     }); 
-// }
+    let count = 0;
+    const heartBtn = document.getElementById('Btn');
+    const heartCount = document.getElementById('heart-count');
 
-let heartBtn = document.getElementsByClassName("heart-btn");
+    heartBtn.addEventListener('click', function() {
+        count = count + 1;
+        heartCount.innerText = count;
+    });
 
-let countSpan = document.getElementById("heart-count").innerText;
+  
 
-// heartBtn.addEventListener("click", function(){
-//     let count = parseInt(countSpan);
-//     count = count + 1;
-//     countSpan= count;
-// })
-document.getElementsByClassName("heart-btn").addEventListener("click", function(){
-    console.log("btn clicked")
-})
+    
